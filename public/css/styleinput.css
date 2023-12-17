@@ -1,0 +1,200 @@
+*,
+
+html{
+    margin:0;
+    padding:0;
+}
+
+.ul-up {
+    height: 50px;
+    display: flex;
+}
+.container{
+    display: flex;
+}
+
+
+.li-up{
+    list-style-type: none;
+    padding: 3px;
+    margin: 2px;
+    color: black;
+    font-size: 10px;
+}
+
+.MyITS{
+    height: 80%;
+    width: 100%;
+}
+
+.bell{
+    padding-left: 680px;
+    margin-left: 10%;
+    margin-top: 30px;
+    height: 35%;
+    width: 3%;
+}
+
+.profil{
+    display: flex;
+    margin-top: 15px;
+    height: 90%;
+    width: 100%;
+    margin-left: 30%;
+}
+
+.li-upmatkul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 80%;
+}
+
+.name{
+    list-style-type: none;
+    margin-top:30px;
+    margin-left: 80px;
+}
+
+.isi{
+    display: flex;
+    list-style-type: none;
+}
+.slide-bar{
+    flex: 0.1;
+    background-color: rgb(3, 3, 117);
+    width: 4px;
+    height: 250%;
+    border-top-right-radius: 15px;
+    position: flex;
+}
+
+.li-slidebar{
+    padding: 4px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.li-slidebar:hover{
+    background-color: rgba(145, 231, 237, 0.34);
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: relative;
+}
+.online-course{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.group{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.award{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.competencies{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+.grades{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+.pertemuan{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.forminputsoal{
+    flex: 1.5;
+    margin-left: 4%;
+    margin-top: 2%;
+    background-color: darkgrey;
+}
+
+.soalmanual{
+    margin-left: 3%;
+    padding-left: 2%;
+    list-style-type: none;
+}
+
+.soalmanual li {
+    list-style-type: none;
+    margin-top: 1.5%;
+}
+
+.li-soalmanual{
+    background-color: darkslategrey;
+    color: #ffffff;
+    padding: 5px
+}
+
+.kesulitan{
+    margin-left: 5%;
+}
+
+.inputsoal{
+    width: 100%;
+    height: 30%;
+}
+
+.ijawaban{
+    margin-left: 5%;
+    width: 80%;
+    height: 4%;
+}
+
+.kjawaban{
+    margin-left: 2%;
+    width: 80%;
+}
+
+.buttonsave{
+    margin-left: 80%;
+}
+
+.batal{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 60%;
+    margin-top: 3%;
+    background-color: darkgrey;
+    border-radius: 15px;
+}
+
+.simpan{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: plum;
+    border-radius: 15px;
+    margin-left: 5%;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Soal</title>
+    <link rel="stylesheet" href='/css/stylegenerate.css'>
+
+</head>
+<body>
+    <form class="form2" action='/generatedata' method="post" id="form2">
+        <div class="proporsi">
+            <h1>Proporsi Soal</h1>
+            <input class="nama_ujian" type="text" name="namaUjian" placeholder="input Nama Ujian" required>
+        </div>
+        <table id="tabel" style="border-collapse: collapse; border: 1px solid black;">
+            <thead>
+            <tr>
+                <th>Materi</th>
+                <th colspan="3">Tingkat Kesulitan</th>
+            </tr>
+            </thead>
+            <tbody id="tabelBody">
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption1" name="selectOption1">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy1" type="number" placeholder="Easy" name="easy1" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard1" type="number" placeholder="Hard" name="hard1" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult1" type="number" placeholder="Difficult" name="difficult1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption2" name="selectOption2">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy2" type="number" placeholder="Easy" name="easy2" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard2" type="number" placeholder="Hard" name="hard2" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult2" type="number" placeholder="Difficult" name="difficult2" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption3" name="selectOption3">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy3" type="number" placeholder="Easy" name="easy3" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard3" type="number" placeholder="Hard" name="hard3" required>
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult3" type="number" placeholder="Difficult" name="difficult3" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption4" name="selectOption4">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy4" type="number" placeholder="Easy" name="easy4">
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard4" type="number" placeholder="Hard" name="hard4">
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult4" type="number" placeholder="Difficult" name="difficult4">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption5" name="selectOption5">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy5" type="number" placeholder="Easy" name="easy5">
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard5" type="number" placeholder="Hard" name="hard5">
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult5" type="number" placeholder="Difficult" name="difficult5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption6" name="selectOption6">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy6" type="number" placeholder="Easy" name="easy6">
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard6" type="number" placeholder="Hard" name="hard6">
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult6" type="number" placeholder="Difficult" name="difficult6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <select class="imateri" id="selectOption7" name="selectOption7">
+                    <% uniqueValues.forEach(value => { %>
+                    <option value="" disabled selected></option>
+                    <option value="<%= value.materi %>"><%= value.materi %></option>
+                    <% }); %>
+                </select>
+                <td>
+                <input class="ikesulitan" id="easy7" type="number" placeholder="Easy" name="easy7">
+                </td>
+                <td>
+                <input class="ikesulitan" id="hard7" type="number" placeholder="Hard" name="hard7">
+                </td>
+                <td>
+                <input class="ikesulitan" id="difficult7" type="number" placeholder="Difficult" name="difficult7">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="xgenerate" onclick="hiddenform()" type="button">Batal</button>
+        <button class="generate" type="submit">Generate</button>
+    </form>
+    <script>
+        function hiddenform(){
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

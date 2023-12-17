@@ -1,0 +1,312 @@
+*,
+
+html{
+    margin:0;
+    padding:0;
+}
+
+.ul-up {
+    height: 50px;
+    display: flex;
+}
+
+
+
+.li-up{
+    list-style-type: none;
+    color: black;
+    font-size: 10px;
+}
+
+.MyITS{
+    height: 80%;
+    width: 100%;
+}
+
+.bell{
+    padding-left: 680px;
+    margin-left: 10%;
+    margin-top: 30px;
+    height: 35%;
+    width: 3%;
+}
+
+.profil{
+    display: flex;
+    margin-top: 15px;
+    height: 90%;
+    width: 100%;
+    margin-left: 30%;
+}
+
+.li-upmatkul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 80%;
+}
+
+.name{
+    list-style-type: none;
+    margin-top:30px;
+    margin-left: 80px;
+}
+
+.isi{
+    display: flex;
+    list-style-type: none;
+}
+.slide-bar{
+    flex: 1;
+    background-color: rgb(3, 3, 117);
+    width: 4px;
+    height: 250%;
+    border-top-right-radius: 15px;
+    position: flex;
+}
+
+.li-slidebar{
+    padding: 4px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.li-slidebar:hover{
+    background-color: rgba(145, 231, 237, 0.34);
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: relative;
+}
+.online-course{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.group{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.award{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+
+.competencies{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+.grades{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+.pertemuan{
+    list-style-type: none;
+    margin-top: 20%;
+    margin-left: 30%;
+    height: 5%;
+    width: 35%;
+}
+.editujian{
+    flex: 15;
+    list-style-type: none;
+    background-color:teal;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 25%;
+}
+.li-editujian{
+    list-style-type: none;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 3%;
+    max-width: 310px;
+    border-bottom: 1px solid turquoise;
+}
+
+.namaujian{
+    background-color: transparent;
+    font-size: 2rem;
+    color:#fff;
+    border-color: transparent;
+}
+
+.editujian1{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.edit{
+    height: 50%;
+    width: 5%;
+    margin-left: 162%;
+}
+
+.li-waktuujian{
+    margin: 2%;
+    list-style-type: none;
+}
+.li-durasi{
+    display: flex;
+    margin: 2%
+}
+.li-jumlahsoal{
+    display: flex;
+    margin: 2%
+}
+
+.tanggal{
+    margin-left: 3%;
+    padding:0.5%;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    color: turquoise
+}
+
+.waktu{
+    margin-left: 1%;
+    padding:0.5%;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    color: turquoise
+}
+
+.durasi{
+    margin-left: 14.8%;
+    padding:0.5%;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    color: turquoise;
+    width: 5%;
+}
+
+.nSoal{
+    margin-left: 11.3%;
+    padding:0.5%;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    color: turquoise;
+    width: 65px
+}
+
+.ul-editujian{
+    list-style-type: none;
+}
+.next{
+    list-style-type: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(97, 164, 95);
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+.simpan{
+    list-style-type: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: plum;
+    border-radius: 20px;
+    margin-left: 32%;
+    margin-bottom: 2%;
+}
+
+.nama_ujian{
+    background-color: white;
+    width: 95%;
+    padding-left: 5px;
+}
+
+/* PROPORSI SOAL*/
+.proporsi{
+    border-color: #ffffff;
+    background-color: rgb(180, 3, 89);
+    font-size: 20;
+    width: 590px;
+    padding: 5px;
+    color:#fff
+}
+
+.imateri{
+    margin-left: 7%;
+    width: 150px;
+}
+.ikesulitan{
+    width: 60%;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}
+
+.generate{
+    background-color: rgb(172, 15, 78);
+    width:90px;
+    color:white;
+    font-size: 15;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+.xgenerate{
+    background-color: rgb(147, 145, 146);
+    width:90px;
+    color:white;
+    font-size: 15;
+    border-radius: 20px;
+    margin-left: 60%;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+  
+.form2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Sesuaikan lebar formulir sesuai kebutuhan */
+    max-width: 600px; /* Atur lebar maksimum formulir jika diperlukan */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.form1{
+    margin-top: 8%;
+}
+
+.hidden{
+    display: none;
+}

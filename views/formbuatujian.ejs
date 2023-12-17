@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Ujian</title>
+    <link rel="stylesheet" href='/css/style.css'>
+    <style>
+        #form2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action='/buatujian' method="post" class="form1" id="form1">
+    <div class="container">
+        <!-- NAVIGASI -->
+        <div class="up">
+            <ul class="ul-up">
+                <li class="li-up">
+                    <img src="Screenshot 2023-10-24 193505.png" class="MyITS"/>
+                </li>
+                <li class="li-upmatkul">
+                    <h1>Mata Kuliah 1</h1>
+                    <h4>Kelas A / Buat Ujian / Edit Ujian</h4>
+                </li>
+                <li class="li-up">
+                    <img src="bell.png" class="bell"/>
+                </li>
+                <li class="name">
+                    <h3>Nama Dosen</h3>
+                </li>
+                <li class="li-up">
+                    <img src="user.png" class="profil"/>
+                </li>
+            </ul>
+        <!-- NAVIGASI END -->
+        <!-- SLIDE BAR -->
+        <div class="isi">
+            <div class="slide-bar">
+                <ul class="ul-slidebar">
+                    <li class="li-slidebar">
+                        <img src="online-course.png" class="online-course"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="group.png" class="group"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="badge.png" class="award"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="manager.png" class="competencies"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="score.png" class="grades"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                </ul>
+            </div>
+            <div class="editujian">
+                <ul class="ul-editujian">
+                    <li class="li-editujian">
+                        <input class="namaujian" type="text" placeholder="Nama Ujian" name="namaUjian" required>
+                    </li>
+                    <li class="li-waktuujian">
+                        <label for="tanggalUjian">Waktu pelaksanaan ujian</label>
+                        <input class="tanggal" type="date" id="tanggalUjian" name="tanggalUjian" required>
+                        <input class="waktu" type="time" id="waktuUjian" name="waktuUjian" required>
+                    </li>
+                    <li class="li-durasi">
+                        <label for="durasiUjian">Durasi</label>
+                        <input class="durasi" type="number" id="durasiUjian" name="durasiUjian" required>
+                        <label> menit</label>
+                    </li>
+                    <li class="li-jumlahsoal">
+                        <label for="BanyakSoal">Jumlah Soal</label>
+                        <input class="nSoal" type="number" id="BanyakSoal" name="BanyakSoal" required>
+                    </li>
+                    <li>
+                        <button class="simpan" type="submit">Simpan</button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+    <form action="/pilihopsi" method="get">
+        <button class="next" type="submit">Selanjutnya</button>
+    </form>
+</body>
+</html>

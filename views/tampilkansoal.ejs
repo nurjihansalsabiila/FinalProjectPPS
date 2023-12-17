@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/styletampilsoal.css'>
+    <title>Lihat Soal</title>
+</head>
+<body>
+    <form action='/tampilkansoal/:<%= namaUjian %>' method="get">
+        <label for="namaUjian">Nama Ujian :</label>
+        <input class="name" type="text" id="namaUjian" name="namaUjian" value="<%= namaUjian %>">
+        <button type="submit">Tampilkan</button>
+        <link rel="stylesheet" href='/css/styletampilsoal.css'>
+    </form>
+</body>
+</html>

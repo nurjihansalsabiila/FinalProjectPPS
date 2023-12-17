@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='/css/styledelete.css'>
+</head>
+<body>
+    <form action="/delete/:id" method="post">
+    <h2 class="konfirm">Pesan konfirmasi</h2>
+    <h4>Apakah Anda yakin akan menghapus soal ini ?</h4>
+    <button class="xgenerate" onclick="hiddenform()" type="button">Tidak</button>
+    <button type="submit" class="generate">Iya</button>
+</form>
+<script>
+    // Periksa path URL dan atur tampilan formulir berdasarkan kondisi
+        function hiddenform() {
+            // Menyembunyikan form kedua
+            window.history.back();;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Excel to MySQL</title>
+  <link rel="stylesheet" href='/css/stylebuatsoal.css'>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGASI -->
+        <div class="up">
+            <ul class="ul-up">
+                <li class="li-up">
+                    <img src="Screenshot 2023-10-24 193505.png" class="MyITS"/>
+                </li>
+                <li class="li-upmatkul">
+                    <h1>Mata Kuliah 1</h1>
+                    <h4>Kelas A / Buat Soal / Upload File</h4>
+                </li>
+                <li class="li-up">
+                    <img src="bell.png" class="bell"/>
+                </li>
+                <li class="name">
+                    <h3>Nama Admin</h3>
+                </li>
+                <li class="li-up">
+                    <img src="user.png" class="profil"/>
+                </li>
+            </ul>
+        <!-- NAVIGASI END -->
+        <!-- SLIDE BAR -->
+        <div class="isi">
+            <div class="slide-bar">
+                <ul class="ul-slidebar">
+                    <li class="li-slidebar">
+                        <img src="online-course.png" class="online-course"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="group.png" class="group"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="badge.png" class="award"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="manager.png" class="competencies"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="score.png" class="grades"/>
+                    </li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/></li>
+                    <li class="li-slidebar">
+                        <img src="online-education.png" class="pertemuan"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentupload">
+                <h1 class="upload">Upload File</h1>
+                <ul class="ul-upload">
+                    <li class="uploadsoal">
+                        <form action="/upload-soal" method="post" enctype="multipart/form-data">
+                        <h4>Upload Soal</h4>
+                        <input type="file" name="file" id="fileSoal" accept=".xlsx, .xls">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                          </div>
+                        <button class="button" type="submit"> Upload </button>
+                        </form>
+                    </li>
+                    <li class="uploadkeyword">
+                        <form action="/upload-materi" method="post" enctype="multipart/form-data">
+                        <h4>Upload Keyword Materi</h4>
+                        <input type="file" name="file" id="filekeyword" accept=".xlsx, .xls">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                          </div>
+                        <button class="button" type="submit"> Upload </button>
+                        </form>
+                    </li>
+                    <li class="uploadkko">
+                        <form action="/upload-kko" method="post" enctype="multipart/form-data">
+                        <h4>Upload Kata Kunci Kesulitan</h4>
+                        <input type="file" name="file" id="filekko" accept=".xlsx, .xls">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                          </div>
+                        <button class="button" type="submit"> Upload </button>
+                        </form>
+                    </li> 
+                </ul>
+                
+            </div>
+            <form action="/pelabelan" method="post">
+                <button class="pelabelan" type="submit"> Lakukan Pelabelan soal </button>
+            </form> 
+    </body>
+</html>

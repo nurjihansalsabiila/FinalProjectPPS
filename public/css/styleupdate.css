@@ -1,0 +1,63 @@
+*,
+
+html{
+    margin:5px;
+    padding:0;
+}
+
+.soalmanual{
+    flex:15;
+    margin-left: 3%;
+    padding-left: 2%;
+    list-style-type: none;
+}
+
+.soalmanual li {
+    list-style-type: none;
+    margin-top: 1.5%;
+}
+
+.li-soalmanual{
+    background-color: darkslategrey;
+    color: #ffffff;
+    padding: 5px
+}
+
+.kesulitan{
+    margin-left: 5%;
+}
+
+.inputsoal{
+    width: 91%;
+    height: 40%;
+}
+
+.ijawaban{
+    margin-left: 5%;
+    width: 80%;
+    height: 4%;
+}
+
+.kjawaban{
+    margin-left: 2%;
+    width: 80%;
+}
+
+button {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 15px;
+};
+
+.batal {
+
+    background-color: darkgrey;
+}
+.save{
+    background-color: plum;
+};
+.namaedit{
+    margin-left: 20%;
+}

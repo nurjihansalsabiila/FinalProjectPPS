@@ -1,0 +1,36 @@
+*,
+
+html{
+    margin:5px;
+    padding:0;
+}
+
+table{
+    width: 100%;
+}
+
+.name{
+    background-color: transparent;
+    font-size: 2rem;
+    border-color:grey;
+    padding-right: 67%;
+}
+
+.button{
+    background-color: rgb(172, 15, 78);
+    width:90px;
+    color:white;
+    font-size: 15;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+
+.close{
+    height: 5%;
+    width: 3%;
+    font-size: 30;
+    border-radius: 20px;
+    margin-left: 95%;
+}

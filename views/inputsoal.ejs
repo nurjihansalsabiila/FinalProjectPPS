@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Soal Manual</title>
+    <link rel="stylesheet" href='/css/styleinput.css'>
+</head>
+<body>
+    <form action='/inputsoal' method="post" class="form1" id="form1">
+        <div class="container">
+            <!-- NAVIGASI -->
+            <div class="up">
+                <ul class="ul-up">
+                    <li class="li-up">
+                        <img src="Screenshot 2023-10-24 193505.png" class="MyITS"/>
+                    </li>
+                    <li class="li-upmatkul">
+                        <h1>Mata Kuliah 1</h1>
+                        <h4>Kelas A / Buat Ujian / Edit Ujian</h4>
+                    </li>
+                    <li class="li-up">
+                        <img src="bell.png" class="bell"/>
+                    </li>
+                    <li class="name">
+                        <h3>Nama Admin</h3>
+                    </li>
+                    <li class="li-up">
+                        <img src="user.png" class="profil"/>
+                    </li>
+                </ul>
+            <!-- NAVIGASI END -->
+            <!-- SLIDE BAR -->
+            <div class="isi">
+                <div class="slide-bar">
+                    <ul class="ul-slidebar">
+                        <li class="li-slidebar">
+                            <img src="online-course.png" class="online-course"/>
+                        </li>
+                        <li class="li-slidebar">
+                            <img src="group.png" class="group"/>
+                        </li>
+                        <li class="li-slidebar">
+                            <img src="badge.png" class="award"/>
+                        </li>
+                        <li class="li-slidebar">
+                            <img src="manager.png" class="competencies"/>
+                        </li>
+                        <li class="li-slidebar">
+                            <img src="score.png" class="grades"/>
+                        </li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/></li>
+                        <li class="li-slidebar">
+                            <img src="online-education.png" class="pertemuan"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="forminputsoal">
+                    <h2> Input Soal</h2>
+                    <div class="soalmanual">
+                        <ul class="ul-soalmanual">
+                            <li class="li-soalmanual">
+                                <label class="kelmateri">Materi</label>
+                                <input class="input" type="text" id="materi" name="materi" required>
+                                <label class="kesulitan">Tingkat Kesulitan</label>
+                                <input class="input" type="text" id="kesulitan" name="tingkat_kesulitan" required>
+                            </li>
+                            <li class="li-input">
+                                <h4>Soal</h4>
+                                <textarea class="inputsoal" type="text" id="soal" name="soal" required></textarea>
+                                </li>
+                            <li class="jawaban">
+                                <label class="jawaban">Jawaban 1</label>
+                                <input class="ijawaban" type="text" id="jawaban1" name="jawaban1" required>
+                            </li>
+                            <li class="jawaban">
+                                <label class="jawaban">Jawaban 2</label>
+                                <input class="ijawaban" type="text" id="jawaban2" name="jawaban2" required>
+                            </li>
+                            <li class="jawaban">
+                                <label class="jawaban">Jawaban 3</label>
+                                <input class="ijawaban" type="text" id="jawaban3" name="jawaban3" required>
+                            </li>
+                                <li class="jawaban">
+                                <label class="jawaban">Jawaban 4</label>
+                                <input class="ijawaban" type="text" id="jawaban4" name="jawaban4" required>
+                            </li>
+                            <li class="jawaban">
+                                <label class="jawaban">Jawaban 5</label>
+                                <input class="ijawaban" type="text" id="jawaban5" name="jawaban5" required>
+                            </li>
+                            <li class="jawaban">
+                                <label class="jawaban">Kunci Jawaban</label>
+                                <input class="kjawaban" type="text" id="kuncijawaban" name="kunci_jawaban" required>
+                            </li>
+                        </ul>
+                        </div>
+                        <button class="batal" onclick="back()" type="button" id="batal">Batal</button>
+                        <button class="simpan" type="submit" id="simpan">Simpan</button>
+     
+            </div>
+            <script>
+                function back() {
+                // Menyembunyikan form kedua
+                window.history.back();;
+            }
+            </script>
+ 
+</body>
+</html>

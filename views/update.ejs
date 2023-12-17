@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Baris</title>
+  <link rel="stylesheet" href="/css/styleupdate.css">
+</head>
+<body>
+    <form action='/edit/:id' method="post" id="editForm">
+        <h2 class="namaedit"> Edit Soal</h2> 
+        <div class="soalmanual">
+           <ul class="ul-soalmanual">
+               <% data.forEach(row => { %>
+               <li class="li-soalmanual">
+                   <label class="kelmateri">Materi</label>
+                   <input class="input" type="text" id="materi" value="<%= row.materi %>">
+                   <label class="kesulitan">Tingkat Kesulitan</label>
+                   <input class="input" type="text" id="kesulitan" value="<%= row.tingkat_kesulitan %>">
+               </li>
+               <li class="li-input">
+                   <h4>Soal</h4>
+                   <textarea class="inputsoal" type="text" id="soal" ><%= row.soal %></textarea>
+               <li class="jawaban">
+                   <label class="jawaban">Jawaban 1</label>
+                   <input class="ijawaban" type="text" id="jawaban1" value="<%= row.jawaban1 %>">
+               </li>
+               <li class="jawaban">
+                   <label class="jawaban">Jawaban 2</label>
+                   <input class="ijawaban" type="text" id="jawaban2" value="<%= row.jawaban2 %>">
+               </li>
+               <li class="jawaban">
+                   <label class="jawaban">Jawaban 3</label>
+                   <input class="ijawaban" type="text" id="jawaban3" value="<%= row.jawaban3 %>">
+               </li>
+                   <li class="jawaban">
+                   <label class="jawaban">Jawaban 4</label>
+                   <input class="ijawaban" type="text" id="jawaban4" value="<%= row.jawaban4 %>">
+               </li>
+               <li class="jawaban">
+                   <label class="jawaban">Jawaban 5</label>
+                   <input class="ijawaban" type="text" id="jawaban5" value="<%= row.jawaban5 %>">
+               </li>
+               <li class="jawaban">
+                   <label class="jawaban">Kunci Jawaban</label>
+                   <input class="kjawaban" type="text" id="kuncijawaban" value="<%= row.kunci_jawaban %>">
+               </li>
+               <% }); %>
+                   <button class="batal" onclick="back()" type="button" id="batal">Batal</button>
+                   <button class="save" type="submit" id="simpan">Simpan</button>
+           </ul>
+       </div>
+    </form>
+    <script>
+        function hiddenform() {
+            // Menyembunyikan form kedua
+            window.history.back();;
+        }
+    </script>
+</body>
+</html>

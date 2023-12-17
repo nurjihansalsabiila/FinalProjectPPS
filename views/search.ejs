@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/style.css'>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid cadetblue;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: cadetblue;
+        }
+    </style>
+    <title>Bank Soal</title>
+</head>
+<body>
+    <h1>Bank Soal</h1>
+    <h3>Mencari berdasarkan</h3>
+    <form action='/search' method="get">
+        <label for="Materi">Materi :</label>
+        <input type="text" id="materi" name="searchMateri" value="<% searchMateri %>">
+        <label for="Tingkat Kesulitan">Tingkat Kesulitan :</label>
+        <input type="text" id="level" name="searchLevel" value="<% searchLevel %>">
+        <button type="submit">Search</button>
+    </form>
+    <h2>Data Bank Soal</h2>
+    <table id="tabeldata" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Materi</th>
+                <th>Tingkat Kesulitan</th>
+                <th>Soal</th>
+                <th>Kunci Jawaban</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(row => { %>
+                <tr>    
+                    <td><%= row.id %></td>
+                    <td><%= row.materi %></td>
+                    <td><%= row.tingkat_kesulitan %></td>
+                    <td><%= row.soal %>
+                        <p>a. <%= row.jawaban1 %></p>
+                        <p>b. <%= row.jawaban2 %></p>
+                        <p>c. <%= row.jawaban3 %></p>
+                        <p>d. <%= row.jawaban4 %></p>
+                        <p>e. <%= row.jawaban5 %></p>
+                    </td>
+                    <td><%= row.kunci_jawaban %></td>
+                    <td>
+                        <a href="/edit/<%= row.id %>" class='btn btn-secodary btn-sm'>Edit</a>
+                        <a href="/delete/<%= row.id %>" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

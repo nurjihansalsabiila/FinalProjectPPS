@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/stylepilihmanual.css'>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid cadetblue;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: cadetblue;
+        }
+    </style>
+    <title>Search</title>
+</head>
+<body>
+    <form action="/pilihmanual" method="post" onsubmit="submitForm(event)">
+        <input class="nameujian" type="text" placeholder="Input Nama Ujian" name="namaUjian" required>
+    <h2>Data Bank Soal</h2>
+    <table id="tabeldata" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Materi</th>
+                <th>Tingkat Kesulitan</th>
+                <th>Soal</th>
+                <th>Kunci Jawaban</th>
+                <th>Choose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(row => { %>
+                <tr>    
+                    <td><%= row.id %></td>
+                    <td><%= row.materi %></td>
+                    <td><%= row.tingkat_kesulitan %></td>
+                    <td><%= row.soal %>
+                        <p>a. <%= row.jawaban1 %></p>
+                        <p>b. <%= row.jawaban2 %></p>
+                        <p>c. <%= row.jawaban3 %></p>
+                        <p>d. <%= row.jawaban4 %></p>
+                        <p>e. <%= row.jawaban5 %></p>
+                    </td>
+                    <td><%= row.kunci_jawaban %></td>
+                    <td>
+                        <input type="checkbox" name="selectedItems" value="<%= row.id %>">
+                    </td>
+                </tr>
+            <% }); %>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Tombol navigasi halaman -->
+    <button class="xpilih" onclick="x()" type="reset">Batal</button>
+    <button class="pilih" type="submit">Simpan</button>
+</form>
+<script>
+    function x() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>

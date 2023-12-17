@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href='/css/styletampilsoal.css'>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid cadetblue;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: cadetblue;
+        }
+
+    </style>
+    <title>Soal <%= namaUjian %></title>
+</head>
+<body>
+    <form class="form3" action="/tampilkansoal">
+        <button class="close" type="submit">X</button>
+        <h1>SOAL <%= namaUjian %></h1>
+        <table id="tabeldata" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Soal</th>
+                    <th>Kunci Jawaban</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(row => { %>
+                    <tr>    
+                        <td><%= row.id %></td>
+                        <td><%= row.soal %>
+                            <p>a. <%= row.jawaban1 %></p>
+                            <p>b. <%= row.jawaban2 %></p>
+                            <p>c. <%= row.jawaban3 %></p>
+                            <p>d. <%= row.jawaban4 %></p>
+                            <p>e. <%= row.jawaban5 %></p>
+                        </td>
+                        <td><%= row.kunci_jawaban %></td>
+                    </tr>
+                <% }); %>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+</body>
+</html>

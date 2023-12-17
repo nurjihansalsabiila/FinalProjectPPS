@@ -1,0 +1,37 @@
+*,
+
+html{
+    margin:2%;
+    padding:0;
+}
+
+table{
+    width: 100%;
+}
+
+.nameujian{
+    background-color: transparent;
+    font-size: 2rem;
+    border-color:grey;
+    padding-right: 67%;
+}
+.pilih{
+    background-color: rgb(172, 15, 78);
+    width:90px;
+    color:white;
+    font-size: 15;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+.xpilih{
+    background-color: rgb(147, 145, 146);
+    width:90px;
+    color:white;
+    font-size: 15;
+    border-radius: 20px;
+    margin-left: 78%;
+    margin-top: 2%;
+    padding: 0.5%;
+}
